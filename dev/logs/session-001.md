@@ -106,12 +106,40 @@ before we start, we need to document our process from back to front. how can we 
 
 ---
 
+### [005] Frontend Design Skill Creation
+
+| Field | Value |
+|-------|-------|
+| Timestamp | +15 min |
+| Type | Skill Creation |
+| Command | Direct specification |
+
+**Input:**
+User provided complete skill specification for distinctive frontend design.
+
+**Files Created:**
+1. `.claude/commands/frontend-design.md` — Skill for production-grade UI development
+
+**Skill Capabilities:**
+- Design thinking framework (Purpose, Tone, Constraints, Differentiation)
+- Typography guidelines (avoid generic fonts)
+- Color & theme principles (dominant + sharp accents)
+- Motion patterns (orchestrated reveals, scroll triggers)
+- Spatial composition (asymmetry, overlap, grid-breaking)
+- Background & detail techniques (textures, gradients, depth)
+- Anti-patterns list (what NOT to do)
+
+**Significance:**
+This skill represents the "how to prompt for design" answer for the hackathon. It's meta — the skill we're creating will be used to rebuild the page it will be showcased on.
+
+---
+
 ## Session Metrics
 
 | Metric | Value |
 |--------|-------|
-| Total Prompts | 4 |
-| Files Created | 3 |
+| Total Prompts | 5 |
+| Files Created | 4 |
 | Files Modified | 3 |
 | Build Status | Passing |
 | Iterations | 0 (first pass) |
@@ -120,7 +148,7 @@ before we start, we need to document our process from back to front. how can we 
 
 ## Next Steps
 
-- [ ] Preview the site locally
-- [ ] Iterate on design/content as needed
+- [ ] Use `/frontend-design` to rebuild landing page with distinctive aesthetic
+- [ ] Preview and iterate
 - [ ] Deploy to Vercel/Netlify/Render
 - [ ] Continue documenting each change

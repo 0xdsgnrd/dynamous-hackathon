@@ -98,6 +98,28 @@ A chronological record of building the "How I Build Beautiful Frontends with AI"
 
 ---
 
+### Entry 5: Frontend Design Skill
+
+**Time:** After documentation setup
+**Action:** Created `/frontend-design` skill for distinctive UI development
+
+**Prompt:** User provided detailed skill specification
+
+**What was created:**
+`.claude/commands/frontend-design.md` — A skill that guides creation of distinctive, production-grade frontend interfaces.
+
+**Key principles in the skill:**
+- Commit to BOLD aesthetic directions (brutalist, maximalist, minimal, retro-futuristic, etc.)
+- Focus on: Typography, Color, Motion, Spatial Composition, Visual Details
+- Anti-patterns: Generic AI aesthetics, Inter/Roboto fonts, purple gradients, predictable layouts
+- Match implementation complexity to aesthetic vision
+- Vary everything — no two designs should look the same
+
+**Why this matters:**
+This skill encodes the design philosophy we want to demonstrate. When we rebuild the landing page using this skill, it should produce something more distinctive than the initial purple-gradient version.
+
+---
+
 ## How to Use This Log
 
 After each significant step, add an entry with:
