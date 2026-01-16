@@ -72,6 +72,36 @@ export default function Home() {
         </div>
       </div>
 
+      {/* What Is This Section */}
+      <section className="py-16 border-b-2 border-[var(--border)]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="section-number mb-4">The Short Version</p>
+              <h2 className="font-serif text-3xl md:text-4xl mb-6">
+                What is this, exactly?
+              </h2>
+              <p className="text-lg text-[var(--fg-muted)] mb-6">
+                I use AI to help me write code. But just asking &ldquo;make me a website&rdquo;
+                gets generic, forgettable results. <span className="text-[var(--fg)]">This page shows my system for getting distinctive, production-ready output.</span>
+              </p>
+              <p className="text-lg text-[var(--fg-muted)]">
+                The twist? This very page was built using that system — so you&apos;re looking at the proof.
+              </p>
+            </div>
+            <div className="card-accent p-8">
+              <p className="font-mono text-sm mb-4 opacity-75">WHY DOES THIS MATTER?</p>
+              <p className="font-serif text-2xl leading-relaxed">
+                Without a system, AI gives you the same purple-gradient, dark-mode template everyone else gets.
+              </p>
+              <p className="font-serif text-2xl leading-relaxed mt-4">
+                <span className="opacity-75">With a system,</span> you get work that actually looks <span className="underline">designed</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <section id="process" className="py-24 border-b-2 border-[var(--border)]">
         <div className="max-w-7xl mx-auto px-6">
@@ -79,6 +109,9 @@ export default function Home() {
             <div className="lg:col-span-4">
               <p className="section-number mb-4">01 — The Process</p>
               <h2 className="headline-lg">The PIV Loop</h2>
+              <p className="text-[var(--fg-muted)] mt-4">
+                A simple 3-step cycle that keeps AI focused and your output high-quality.
+              </p>
             </div>
             <div className="lg:col-span-8 lg:pt-12">
               <p className="pull-quote">
@@ -94,14 +127,15 @@ export default function Home() {
             <div className="p-8 border-b-2 md:border-b-0 md:border-r-2 border-[var(--border)] relative">
               <span className="number-accent">1</span>
               <div className="relative z-10">
-                <h3 className="font-serif text-3xl mb-4">Plan</h3>
+                <h3 className="font-serif text-3xl mb-2">Plan</h3>
+                <p className="text-sm text-accent font-mono mb-4">Tell AI about your project</p>
                 <p className="text-[var(--fg-muted)] mb-6">
-                  Load context with <code className="font-mono text-accent">/prime</code>.
-                  Define requirements. Identify files. Consider edge cases.
+                  Before asking for code, give the AI context about what you&apos;re building
+                  and what you want. Clear instructions = better results.
                 </p>
                 <div className="code-brutal">
-                  <code>/prime</code><br />
-                  <code>/plan-feature</code>
+                  <code className="opacity-60">Example commands:</code><br />
+                  <code>/prime</code> <span className="opacity-60">← load project info</span>
                 </div>
               </div>
             </div>
@@ -110,13 +144,14 @@ export default function Home() {
             <div className="p-8 border-b-2 md:border-b-0 md:border-r-2 border-[var(--border)] relative bg-[var(--bg-alt)]">
               <span className="number-accent">2</span>
               <div className="relative z-10">
-                <h3 className="font-serif text-3xl mb-4">Implement</h3>
+                <h3 className="font-serif text-3xl mb-2">Implement</h3>
+                <p className="text-sm text-accent font-mono mb-4">Be specific about what you want</p>
                 <p className="text-[var(--fg-muted)] mb-6">
-                  Execute with specifics. Reference real sites. Name colors, spacing, effects.
+                  Don&apos;t say &ldquo;make it pretty.&rdquo; Say exactly what style, colors,
+                  and feeling you want. Specificity is the secret.
                 </p>
                 <div className="code-brutal">
-                  <code>/frontend-design</code><br />
-                  <code className="text-[var(--accent)]">&quot;editorial brutalist,<br />warm cream, coral accent&quot;</code>
+                  <code className="text-[var(--accent)]">&quot;warm cream background,<br />coral accent, serif fonts&quot;</code>
                 </div>
               </div>
             </div>
@@ -125,13 +160,14 @@ export default function Home() {
             <div className="p-8 relative">
               <span className="number-accent">3</span>
               <div className="relative z-10">
-                <h3 className="font-serif text-3xl mb-4">Validate</h3>
+                <h3 className="font-serif text-3xl mb-2">Validate</h3>
+                <p className="text-sm text-accent font-mono mb-4">Check the output, then refine</p>
                 <p className="text-[var(--fg-muted)] mb-6">
-                  Build it. Check responsive. Iterate on what&apos;s off. Document the changes.
+                  Look at what AI made. Does it work? Does it look right on mobile?
+                  Give feedback and repeat until it&apos;s right.
                 </p>
                 <div className="code-brutal">
-                  <code>npm run build</code><br />
-                  <code>/log &quot;fixed spacing&quot;</code>
+                  <code className="opacity-60">Review → Feedback → Repeat</code>
                 </div>
               </div>
             </div>
@@ -147,6 +183,10 @@ export default function Home() {
             <h2 className="headline-lg max-w-2xl">
               Skills, Commands, and the <span className="serif-italic">Agentic Layer</span>
             </h2>
+            <p className="text-[var(--fg-muted)] mt-4 max-w-2xl">
+              Think of &ldquo;skills&rdquo; as recipes you write once and reuse forever.
+              The &ldquo;agentic layer&rdquo; is just a folder of instructions that teaches AI about your project.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -315,6 +355,78 @@ export default function Home() {
                   Bold &gt; Safe
                 </code>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Before & After Section */}
+      <section className="py-24 border-b-2 border-[var(--border)] bg-[var(--bg-alt)]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="section-number mb-4">04 — The Proof</p>
+            <h2 className="headline-lg">Before &amp; After</h2>
+            <p className="text-[var(--fg-muted)] mt-4 max-w-2xl mx-auto">
+              Same AI, same project, different approach. The first version used vague prompts.
+              The second used the system you just learned about.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Before */}
+            <div className="card-brutal p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="tag">Before</span>
+                <span className="text-[var(--fg-muted)] text-sm">Version 1</span>
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center gap-3">
+                  <span className="w-4 h-4 rounded-full bg-[#0a0a0f] border border-[var(--border)]"></span>
+                  <span className="text-sm">Dark background (#0a0a0f)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="w-4 h-4 rounded-full bg-[#8b5cf6]"></span>
+                  <span className="text-sm">Purple gradient accents</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-sm bg-[var(--bg-alt)] px-2 py-1">Aa</span>
+                  <span className="text-sm">System fonts (generic)</span>
+                </div>
+              </div>
+              <p className="text-[var(--fg-muted)] text-sm">
+                <strong className="text-[var(--fg)]">The prompt:</strong> &ldquo;Build a landing page for my workflow&rdquo;
+              </p>
+              <p className="text-[var(--fg-muted)] text-sm mt-2">
+                <strong className="text-[var(--fg)]">The result:</strong> Generic, looked like every other AI-generated site
+              </p>
+            </div>
+
+            {/* After */}
+            <div className="card-brutal p-8 border-[var(--accent)]">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="tag tag-accent">After</span>
+                <span className="text-[var(--fg-muted)] text-sm">Version 2 (this page)</span>
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center gap-3">
+                  <span className="w-4 h-4 rounded-full bg-[#FFFDF8] border border-[var(--border)]"></span>
+                  <span className="text-sm">Warm cream (#FFFDF8)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="w-4 h-4 rounded-full bg-[#FF6B4A]"></span>
+                  <span className="text-sm">Coral accent (#FF6B4A)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="font-serif text-sm bg-[var(--bg-alt)] px-2 py-1">Aa</span>
+                  <span className="text-sm">Instrument Serif + Sora</span>
+                </div>
+              </div>
+              <p className="text-[var(--fg-muted)] text-sm">
+                <strong className="text-[var(--fg)]">The prompt:</strong> &ldquo;Editorial brutalist, warm cream, coral accent, serif headlines&rdquo;
+              </p>
+              <p className="text-[var(--fg-muted)] text-sm mt-2">
+                <strong className="text-[var(--fg)]">The result:</strong> Distinctive, memorable, looks intentionally designed
+              </p>
             </div>
           </div>
         </div>
