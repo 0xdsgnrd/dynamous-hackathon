@@ -298,7 +298,8 @@ body::before {
   font-family: var(--font-serif);
   font-size: 8rem;
   line-height: 1;
-  color: var(--border-light);
+  color: var(--accent);
+  opacity: 0.3;
   position: absolute;
   top: -2rem;
   left: -1rem;

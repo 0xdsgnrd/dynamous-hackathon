@@ -4,7 +4,10 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--bg)] border-b-2 border-[var(--border)]">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <span className="font-mono text-sm font-semibold tracking-wide">WORKFLOW.DEV</span>
+          <div className="flex items-center gap-3">
+            <img src="/avatar.jpg" alt="Kris Kutayiah" className="w-8 h-8 rounded-full border-2 border-[var(--border)]" />
+            <span className="font-mono text-sm font-semibold tracking-wide">KRIS KUTAYIAH</span>
+          </div>
           <div className="flex gap-6">
             <a href="#process" className="font-mono text-sm link-underline">Process</a>
             <a href="#toolkit" className="font-mono text-sm link-underline">Toolkit</a>
@@ -29,8 +32,8 @@ export default function Home() {
             </h1>
 
             <p className="text-xl text-[var(--fg-muted)] max-w-lg animate-fade-up delay-2">
-              This page was built using the exact workflow it describes.
-              You&apos;re looking at the proof.
+              A look inside <span className="text-[var(--fg)] font-medium">Kris Kutayiah&apos;s</span> AI-assisted
+              frontend workflow. This page was built using the exact process it describes.
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fade-up delay-3">
@@ -150,7 +153,7 @@ export default function Home() {
             {/* Card 1 */}
             <div className="card-brutal p-8">
               <div className="flex items-start justify-between mb-6">
-                <h3 className="font-serif text-2xl">Claude Code CLI</h3>
+                <h3 className="font-serif text-2xl">AI Coding Agent</h3>
                 <span className="tag">Core</span>
               </div>
               <p className="text-[var(--fg-muted)] mb-6">
@@ -159,7 +162,7 @@ export default function Home() {
               </p>
               <hr className="hr-brutal mb-6" />
               <p className="font-mono text-sm text-[var(--fg-muted)]">
-                anthropic/claude-code
+                Agentic AI + Custom Skills
               </p>
             </div>
 
@@ -325,17 +328,15 @@ export default function Home() {
             This page was designed and built in under an hour
           </h2>
           <p className="text-xl opacity-75 mb-12 max-w-2xl mx-auto">
-            Using Claude Code, the /frontend-design skill, and the PIV loop workflow.
+            Using the /frontend-design skill, the PIV loop, and an AI coding agent.
             The same process can build your next interface.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://docs.anthropic.com/en/docs/claude-code"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#process"
               className="btn-brutal btn-brutal-accent"
             >
-              Try Claude Code
+              Learn the Process
             </a>
             <a href="#process" className="btn-brutal bg-[var(--bg)] text-[var(--fg)]">
               Review the Process
@@ -348,10 +349,10 @@ export default function Home() {
       <footer className="py-8 px-6 border-t-2 border-[var(--border)]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-mono text-sm text-[var(--fg-muted)]">
-            Built with Claude Code + Next.js + Tailwind
+            Built by <span className="text-[var(--fg)]">Kris Kutayiah</span> with AI + Next.js + Tailwind
           </p>
           <p className="font-mono text-sm text-[var(--fg-muted)]">
-            Hackathon 2025 • <span className="text-accent">Editorial Brutalist</span>
+            Dynamous Community Hackathon 1.16.2026 • <span className="text-accent">Editorial Brutalist</span>
           </p>
         </div>
       </footer>
