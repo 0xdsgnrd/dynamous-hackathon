@@ -166,6 +166,118 @@ The redesign itself demonstrates the workflow. We:
 
 ---
 
+### Entry 7: Personalization
+
+**Time:** After redesign
+**Action:** Added personal branding and removed tool-specific references
+
+**Changes made:**
+- Added "KRIS KUTAYIAH" to navigation
+- Added cyberpunk avatar image as logo
+- Updated hero: "A look inside Kris Kutayiah's AI-assisted frontend workflow"
+- Updated footer: "Built by Kris Kutayiah with AI + Next.js + Tailwind"
+- Changed "Hackathon 2025" → "Dynamous Community Hackathon 1.16.2026"
+- Removed all "Claude Code" references (replaced with "AI Coding Agent")
+
+**Why:** Makes the page personal and less tool-specific.
+
+---
+
+### Entry 8: Design Refinement
+
+**Time:** After personalization
+**Prompt:** "Change color of 1,2,3 to orange"
+
+**Change:** Updated `.number-accent` class to use coral accent color (#FF6B4A) at 30% opacity instead of light gray.
+
+**Impact:** The big numbers in the PIV Loop section now match the brand accent color.
+
+---
+
+### Entry 9: Accessibility for Non-Technical Users
+
+**Time:** After refinements
+**Prompt:** "how can we make this website more informative to non-technical devs"
+
+**Quick wins implemented:**
+
+1. **"What is this?" section**
+   - Plain-English intro after the marquee
+   - "Why does this matter?" callout card explaining the value
+
+2. **Jargon explanations**
+   - PIV Loop: "A simple 3-step cycle that keeps AI focused"
+   - Agentic Layer: "A folder of instructions that teaches AI about your project"
+   - Skills: "Recipes you write once and reuse forever"
+
+3. **Clearer PIV Loop steps**
+   - Plan: "Tell AI about your project"
+   - Implement: "Be specific about what you want"
+   - Validate: "Check the output, then refine"
+
+4. **Before & After section (new section 04)**
+   - Side-by-side comparison of v1 vs v2
+   - Visual color swatches
+   - Actual prompts used for each version
+
+**Why:** Makes the page accessible to developers who haven't used AI coding tools extensively.
+
+---
+
+### Entry 10: Fun/Creative Additions
+
+**Time:** After accessibility improvements
+**Prompt:** "how can we take this slightly further?" → chose "Fun/Creative"
+
+**Implemented:**
+
+1. **Easter Egg — "See? Generic."**
+   - Trigger: Click "Editorial Brutalist" in footer
+   - Shows full-screen v1 dark mode overlay
+   - Purple gradients, dark background — the "AI slop" look
+   - Message: "This is what you get without a system"
+   - Button to return to good version
+
+2. **Floating Commit Counter**
+   - Bottom-right corner, always visible
+   - Shows "7 commits to build this"
+   - Pulsing green dot for visual interest
+
+**Technical:** Converted page to client component with useState for easter egg toggle.
+
+---
+
+### Entry 11: Deployment
+
+**Time:** After easter egg
+**Action:** Created GitHub repo and pushed for deployment
+
+**Steps:**
+1. Created repo: `gh repo create dynamous-hackathon --public`
+2. Pushed all commits to GitHub
+3. Repo URL: https://github.com/0xdsgnrd/dynamous-hackathon
+
+**Next:** Deploy on Vercel with root directory set to `apps/web`
+
+---
+
+## Session Summary
+
+**Total commits:** 7
+**Total time:** ~1 hour
+**Key iterations:**
+1. v1: Generic dark mode with purple gradients
+2. v2: Editorial brutalist redesign
+3. v3: Personalization + accessibility + easter egg
+
+**Final stack:**
+- Next.js 16 + React 18
+- Tailwind CSS 3
+- Instrument Serif + Sora + JetBrains Mono
+- Deployed on Vercel
+
+---
+
 ## How to Use This Log
 
 After each significant step, add an entry with:
