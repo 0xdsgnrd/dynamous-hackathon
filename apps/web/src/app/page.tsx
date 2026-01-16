@@ -1,6 +1,48 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
+  const [easterEgg, setEasterEgg] = useState(false);
+
   return (
-    <main className="min-h-screen">
+    <main className={`min-h-screen transition-all duration-500 ${easterEgg ? "dark-mode-v1" : ""}`}>
+
+      {/* Easter Egg Overlay */}
+      {easterEgg && (
+        <div className="fixed inset-0 z-[100] bg-[#0a0a0f] text-white flex items-center justify-center p-6">
+          <div className="max-w-2xl text-center">
+            <p className="text-purple-400 font-mono text-sm mb-4">VERSION 1.0 — THE GENERIC VERSION</p>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 bg-clip-text text-transparent">
+              See? Generic.
+            </h2>
+            <p className="text-zinc-400 text-lg mb-8">
+              Dark background. Purple gradients. System fonts.<br />
+              This is what you get without a system.
+            </p>
+            <button
+              onClick={() => setEasterEgg(false)}
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-semibold hover:scale-105 transition-transform"
+            >
+              Take me back to the good version →
+            </button>
+            <p className="text-zinc-600 text-sm mt-8">
+              (You found the easter egg! Click anywhere or the button to return)
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Commit Counter - Floating */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <div className="card-brutal px-4 py-3 flex items-center gap-3 text-sm">
+          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          <span className="font-mono">
+            <span className="text-accent font-bold">7</span> commits to build this
+          </span>
+        </div>
+      </div>
+
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--bg)] border-b-2 border-[var(--border)]">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -464,7 +506,7 @@ export default function Home() {
             Built by <span className="text-[var(--fg)]">Kris Kutayiah</span> with AI + Next.js + Tailwind
           </p>
           <p className="font-mono text-sm text-[var(--fg-muted)]">
-            Dynamous Community Hackathon 1.16.2026 • <span className="text-accent">Editorial Brutalist</span>
+            Dynamous Community Hackathon 1.16.2026 • <button onClick={() => setEasterEgg(true)} className="text-accent hover:underline cursor-pointer">Editorial Brutalist</button>
           </p>
         </div>
       </footer>
