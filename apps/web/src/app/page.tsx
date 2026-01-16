@@ -38,7 +38,7 @@ export default function Home() {
         <div className="card-brutal px-4 py-3 flex items-center gap-3 text-sm">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
           <span className="font-mono">
-            <span className="text-accent font-bold">7</span> commits to build this
+            <span className="text-accent font-bold">8</span> commits to build this
           </span>
         </div>
       </div>
