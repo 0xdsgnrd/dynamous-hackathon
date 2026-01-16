@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "How I Build Beautiful Frontends with AI",
-  description: "A meta landing page showcasing my AI-assisted frontend development workflow with Claude Code",
+  title: "How I Build Frontends with AI — A Developer's Workflow",
+  description: "A meta landing page: built with the exact process it describes. Editorial brutalist design meets AI-assisted development.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-screen grid-bg">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

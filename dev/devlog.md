@@ -120,6 +120,52 @@ This skill encodes the design philosophy we want to demonstrate. When we rebuild
 
 ---
 
+### Entry 6: Complete Redesign with /frontend-design
+
+**Time:** After skill creation
+**Action:** Used the new skill to completely redesign the landing page
+
+**Design Thinking Process:**
+1. **Purpose:** Showcase AI workflow to developers at hackathon
+2. **Tone chosen:** Editorial Brutalist — "developer zine" aesthetic
+3. **Differentiation:** Light mode (subverts dark theme cliché), elegant serif + raw structure
+
+**The new aesthetic:**
+- Light cream background (#FFFDF8) instead of dark
+- Electric coral accent (#FF6B4A) instead of purple
+- Instrument Serif for headlines, Sora for body, JetBrains Mono for code
+- Exposed 2px borders (brutalist)
+- Grain texture overlay
+- Asymmetric 12-column grid layouts
+- Pull quotes, numbered sections, marquee divider
+
+**Key changes from v1 → v2:**
+| Aspect | Version 1 | Version 2 |
+|--------|-----------|-----------|
+| Theme | Dark (#0a0a0f) | Light cream (#FFFDF8) |
+| Accent | Purple gradient | Coral (#FF6B4A) |
+| Typography | System UI | Instrument Serif + Sora |
+| Borders | Subtle/gradient | Exposed 2px black |
+| Layout | Centered symmetry | Asymmetric 12-col grid |
+| Vibe | Generic tech | Editorial brutalist |
+
+**New sections/elements:**
+- Fixed navigation with underline hover effect
+- Marquee divider with PIV loop text
+- Pull quote in process section
+- Accent card for /frontend-design
+- Numbered tip rows with hover states
+
+**Build result:** Passed
+
+**Meta observation:**
+The redesign itself demonstrates the workflow. We:
+1. Used /frontend-design skill (Plan)
+2. Specified "editorial brutalist, warm cream, coral accent" (Implement)
+3. Ran build to validate (Validate)
+
+---
+
 ## How to Use This Log
 
 After each significant step, add an entry with:

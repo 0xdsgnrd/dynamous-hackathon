@@ -134,21 +134,64 @@ This skill represents the "how to prompt for design" answer for the hackathon. I
 
 ---
 
+### [006] Complete Redesign with /frontend-design Skill
+
+| Field | Value |
+|-------|-------|
+| Timestamp | +20 min |
+| Type | Implementation |
+| Command | `/frontend-design` |
+
+**Input:**
+```
+yes, redesign the page
+```
+
+**Design Thinking (documented before coding):**
+- Purpose: Showcase AI workflow to developers
+- Tone: Editorial Brutalist — "developer zine"
+- Differentiation: Light mode, serif headlines, exposed structure
+
+**Files Modified:**
+1. `globals.css` — Complete rewrite with new design system
+2. `layout.tsx` — Updated metadata
+3. `page.tsx` — Complete redesign (~360 lines)
+
+**Design System Created:**
+- Palette: Cream bg (#FFFDF8), coral accent (#FF6B4A)
+- Typography: Instrument Serif, Sora, JetBrains Mono
+- Components: .card-brutal, .btn-brutal, .tag, .pull-quote
+- Effects: Grain overlay, link-underline, marquee
+
+**Before → After Comparison:**
+| Element | v1 | v2 |
+|---------|----|----|
+| Background | #0a0a0f (dark) | #FFFDF8 (cream) |
+| Accent | Purple gradient | #FF6B4A (coral) |
+| Font (display) | System UI | Instrument Serif |
+| Borders | Subtle glow | 2px solid black |
+| Feel | Generic tech | Editorial zine |
+
+**Output Verification:**
+- `npm run build` — SUCCESS
+
+---
+
 ## Session Metrics
 
 | Metric | Value |
 |--------|-------|
-| Total Prompts | 5 |
+| Total Prompts | 6 |
 | Files Created | 4 |
-| Files Modified | 3 |
+| Files Modified | 6 |
 | Build Status | Passing |
-| Iterations | 0 (first pass) |
+| Iterations | 1 (v1 → v2 redesign) |
 
 ---
 
 ## Next Steps
 
-- [ ] Use `/frontend-design` to rebuild landing page with distinctive aesthetic
-- [ ] Preview and iterate
+- [x] Use `/frontend-design` to rebuild landing page with distinctive aesthetic
+- [ ] Preview locally and iterate if needed
 - [ ] Deploy to Vercel/Netlify/Render
 - [ ] Continue documenting each change
